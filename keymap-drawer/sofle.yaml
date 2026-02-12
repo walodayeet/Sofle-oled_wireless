@@ -1,14 +1,14 @@
 layout: {zmk_keyboard: sofle}
 layers:
-  default: [ESC, '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', +, CAPSLOCK, Q, W, E, R, T, Y, U, I, O, P, _, TAB, A, S, D, F, G, H, J, K, L, ;, '''', LEFT GUI,
-    Z, X, C, V, B, MUTE, '', N, M, ',', ., /, RSHFT, LEFT SHIFT, LALT, LCTRL, lower, SPACE, ENTER, raise, BACKSPACE, DELETE, '?']
+  default: [ESC, '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', DELETE, TAB, Q, W, E, R, T, Y, U, I, O, P, BACKSPACE, LEFT SHIFT, A, S, D, F, G, H, J, K, L, ;,
+    '''', LCTRL, Z, X, C, V, B, MUTE, '', N, M, ',', ., /, RSHFT, LEFT ALT, LEFT WIN, LEFT WIN, lower, SPACE, ENTER, raise, '[', ']', RIGHT ALT]
   lower:
   - {t: ▽, type: trans}
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
   - ^
   - '&'
   - '*'
@@ -27,7 +27,7 @@ layers:
   - F10
   - F11
   - F12
-  - TAB
+  - CAPSLOCK
   - '!'
   - '@'
   - '#'
@@ -94,9 +94,9 @@ layers:
   - LSHFT
   - {t: ▽, type: trans}
   - CLCK
-  - PG DN
-  - LEFT
-  - DOWN
+  - LEFT ARROW
+  - DOWN ARROW
+  - UP ARROW
   - RIGHT
   - DEL
   - BSPC
