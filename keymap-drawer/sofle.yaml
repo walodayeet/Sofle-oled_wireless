@@ -53,16 +53,16 @@ layers:
   - RSHFT
   - LEFT ALT
   - LEFT WIN
-  - LEFT WIN
+  - lower
   - lower
   - SPACE
-  - ENTER
+  - SPACE
   - raise
   - '['
   - ']'
   - RIGHT ALT
   lower:
-  - {t: ▽, type: trans}
+  - '`'
   - '6'
   - '7'
   - '8'
@@ -90,20 +90,20 @@ layers:
   - '!'
   - '@'
   - '#'
-  - $
-  - '%'
+  - LEFT
+  - RIGHT
   - ^
-  - '&'
+  - PRINTSCREEN
   - KP MULTIPLY
   - (
-  - )
+  - \
   - '|'
   - {t: ▽, type: trans}
   - '='
   - '-'
   - KP PLUS
   - '{'
-  - '}'
+  - M
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '['
@@ -114,10 +114,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&sys_reset'
-  - ''
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - ENTER
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -178,7 +178,7 @@ layers:
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ENTER
   - {type: held}
   - ''
   - '&sys_reset'
@@ -212,8 +212,8 @@ layers:
   - RGB BRD
   - RGB BRI
   - ''
-  - ''
-  - ''
+  - LEFT ARROW
+  - RIGHT ARROW
   - ''
   - ''
   - ''
@@ -236,8 +236,8 @@ layers:
   - ''
   - ''
   - ''
-  - ''
   - {type: held}
+  - ''
   - ''
   - ''
   - {type: held}
