@@ -56,7 +56,7 @@ layers:
   - lower
   - lower
   - SPACE
-  - SPACE
+  - ENTER
   - raise
   - BACKSPACE
   - '['
