@@ -58,9 +58,9 @@ layers:
   - SPACE
   - SPACE
   - raise
+  - BACKSPACE
   - '['
   - ']'
-  - RIGHT ALT
   lower:
   - '`'
   - '6'
@@ -157,7 +157,7 @@ layers:
   - DOWN ARROW
   - UP ARROW
   - RIGHT
-  - DEL
+  - \
   - BSPC
   - {t: ▽, type: trans}
   - UNDO
@@ -167,8 +167,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '-'
+  - '='
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -180,7 +180,7 @@ layers:
   - {t: ▽, type: trans}
   - ENTER
   - {type: held}
-  - ''
+  - RALT
   - '&sys_reset'
   - {t: ▽, type: trans}
   adjust:
