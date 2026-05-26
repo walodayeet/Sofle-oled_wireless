@@ -53,12 +53,12 @@ layers:
   - RSHFT
   - LEFT ALT
   - LEFT WIN
-  - lower
+  - LEFT WIN
   - lower
   - SPACE
   - ENTER
   - raise
-  - BACKSPACE
+  - RIGHT WIN
   - '['
   - ']'
   lower:
@@ -114,8 +114,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&sys_reset'
+  - ''
   - {type: held}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ENTER
   - {t: ▽, type: trans}
@@ -142,7 +142,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - PG UP
-  - {t: ▽, type: trans}
+  - PAGE DOWN
   - UP
   - {t: ▽, type: trans}
   - '0'
@@ -169,7 +169,7 @@ layers:
   - {t: ▽, type: trans}
   - '-'
   - '='
-  - {t: ▽, type: trans}
+  - '`'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -236,8 +236,8 @@ layers:
   - ''
   - ''
   - ''
-  - {type: held}
   - ''
+  - {type: held}
   - ''
   - ''
   - {type: held}
