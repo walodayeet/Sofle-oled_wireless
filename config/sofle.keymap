@@ -66,11 +66,13 @@
 &kp GRAVE     &kp NUMBER_6  &kp NUMBER_7  &kp N8       &kp NUMBER_9  &kp N0                          &kp CARET  &kp AMPERSAND    &kp ASTERISK     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL
 &kp F1        &kp F2        &kp F3        &kp F4       &kp F5        &kp F6                          &kp F7     &kp F8           &kp F9           &kp F10               &kp F11                &kp F12
 &kp CAPSLOCK  &kp EXCL      &kp AT        &kp HASH     &kp LEFT      &kp RIGHT                       &kp CARET  &kp PRINTSCREEN  &kp KP_MULTIPLY  &kp LPAR              &kp BACKSLASH          &kp PIPE
-&trans        &kp EQUAL     &kp MINUS     &kp KP_PLUS  &kp LBRC      &kp M      &trans    &trans     &kp LBKT   &kp RBKT         &kp SEMI         &kp COLON             &kp BSLH               &trans
+&trans        &kp EQUAL     &kp MINUS     &kp KP_PLUS  &kp N         &kp M      &trans    &trans     &kp LBKT   &kp RBKT         &kp SEMI         &kp COLON             &kp BSLH               &trans
                             &trans        &sys_reset   &none         &trans     &trans    &kp ENTER  &trans     &trans           &trans           &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
+                <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
         };
 
         raise_layer {
