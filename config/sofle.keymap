@@ -377,7 +377,7 @@
 &rgb_red           &rgb_orange      &rgb_yellow      &rgb_green      &rgb_cyan      &rgb_blue                               &rgb_purple    &rgb_pink       &rgb_white       &rgb_dim       &rgb_spreadish  &rgb_party
 &ext_power EP_TOG  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_EFF                         &rgb_calm      &rgb_focus      &rgb_alert       &rgb_breathe   &rgb_spectrum   &rgb_swirl
 &rgb_ug RGB_OFF    &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &rgb_ug RGB_EFR                         &rgb_night     &rgb_matrix     &rgb_breathe_red &rgb_breathe_green &rgb_breathe_blue &rgb_breathe_white
-&led_map LED_MAP_ON &led_map LED_MAP_TOG &led_map LED_MAP_EFS 4 &led_map LED_MAP_EFS 5 &led_map LED_MAP_EFS 6 &led_map LED_MAP_EFS 7 &led_map LED_MAP_TOG &led_map LED_MAP_EFR &led_map LED_MAP_EFF &led_map LED_MAP_SPD &led_map LED_MAP_SPI &led_map LED_MAP_BAT &led_map LED_MAP_OFF
+&led_map LED_MAP_ON &led_map LED_MAP_TOG &led_map LED_MAP_EFS_CMD 4 &led_map LED_MAP_EFS_CMD 5 &led_map LED_MAP_EFS_CMD 6 &led_map LED_MAP_EFS_CMD 7 &led_map LED_MAP_TOG &led_map LED_MAP_EFR &led_map LED_MAP_EFF &led_map LED_MAP_SPD &led_map LED_MAP_SPI &led_map LED_MAP_BAT &led_map LED_MAP_OFF
                                     &none            &none            &none            &none            &none              &none  &none  &none  &none  &none
             >;
         };
