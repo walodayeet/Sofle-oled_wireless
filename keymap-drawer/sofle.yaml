@@ -51,8 +51,8 @@ layers:
   - .
   - /
   - RSHFT
+  - {t: ▽, type: trans}
   - LEFT ALT
-  - LEFT WIN
   - LEFT WIN
   - lower
   - SPACE
