@@ -61,6 +61,116 @@
                 <&macro_tap &rgb_ug RGB_COLOR_HSB(0,100,40)>;
         };
 
+        rgb_dim: rgb_dim {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings =
+                <&macro_tap &rgb_ug RGB_ON>,
+                <&macro_tap &rgb_ug RGB_EFS_CMD 0>,
+                <&macro_tap &rgb_ug RGB_COLOR_HSB(0,0,15)>;
+        };
+
+        rgb_red: rgb_red {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings =
+                <&macro_tap &rgb_ug RGB_ON>,
+                <&macro_tap &rgb_ug RGB_EFS_CMD 0>,
+                <&macro_tap &rgb_ug RGB_COLOR_HSB(0,100,45)>;
+        };
+
+        rgb_orange: rgb_orange {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings =
+                <&macro_tap &rgb_ug RGB_ON>,
+                <&macro_tap &rgb_ug RGB_EFS_CMD 0>,
+                <&macro_tap &rgb_ug RGB_COLOR_HSB(25,100,45)>;
+        };
+
+        rgb_yellow: rgb_yellow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings =
+                <&macro_tap &rgb_ug RGB_ON>,
+                <&macro_tap &rgb_ug RGB_EFS_CMD 0>,
+                <&macro_tap &rgb_ug RGB_COLOR_HSB(55,100,45)>;
+        };
+
+        rgb_green: rgb_green {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings =
+                <&macro_tap &rgb_ug RGB_ON>,
+                <&macro_tap &rgb_ug RGB_EFS_CMD 0>,
+                <&macro_tap &rgb_ug RGB_COLOR_HSB(120,100,40)>;
+        };
+
+        rgb_cyan: rgb_cyan {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings =
+                <&macro_tap &rgb_ug RGB_ON>,
+                <&macro_tap &rgb_ug RGB_EFS_CMD 0>,
+                <&macro_tap &rgb_ug RGB_COLOR_HSB(185,100,40)>;
+        };
+
+        rgb_blue: rgb_blue {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings =
+                <&macro_tap &rgb_ug RGB_ON>,
+                <&macro_tap &rgb_ug RGB_EFS_CMD 0>,
+                <&macro_tap &rgb_ug RGB_COLOR_HSB(225,100,40)>;
+        };
+
+        rgb_purple: rgb_purple {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings =
+                <&macro_tap &rgb_ug RGB_ON>,
+                <&macro_tap &rgb_ug RGB_EFS_CMD 0>,
+                <&macro_tap &rgb_ug RGB_COLOR_HSB(275,100,40)>;
+        };
+
+        rgb_pink: rgb_pink {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings =
+                <&macro_tap &rgb_ug RGB_ON>,
+                <&macro_tap &rgb_ug RGB_EFS_CMD 0>,
+                <&macro_tap &rgb_ug RGB_COLOR_HSB(320,100,45)>;
+        };
+
+        rgb_white: rgb_white {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings =
+                <&macro_tap &rgb_ug RGB_ON>,
+                <&macro_tap &rgb_ug RGB_EFS_CMD 0>,
+                <&macro_tap &rgb_ug RGB_COLOR_HSB(0,0,45)>;
+        };
+
         rgb_breathe: rgb_breathe {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -70,6 +180,50 @@
                 <&macro_tap &rgb_ug RGB_ON>,
                 <&macro_tap &rgb_ug RGB_EFS_CMD 1>,
                 <&macro_tap &rgb_ug RGB_COLOR_HSB(275,100,35)>;
+        };
+
+        rgb_breathe_red: rgb_breathe_red {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings =
+                <&macro_tap &rgb_ug RGB_ON>,
+                <&macro_tap &rgb_ug RGB_EFS_CMD 1>,
+                <&macro_tap &rgb_ug RGB_COLOR_HSB(0,100,40)>;
+        };
+
+        rgb_breathe_green: rgb_breathe_green {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings =
+                <&macro_tap &rgb_ug RGB_ON>,
+                <&macro_tap &rgb_ug RGB_EFS_CMD 1>,
+                <&macro_tap &rgb_ug RGB_COLOR_HSB(120,100,35)>;
+        };
+
+        rgb_breathe_blue: rgb_breathe_blue {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings =
+                <&macro_tap &rgb_ug RGB_ON>,
+                <&macro_tap &rgb_ug RGB_EFS_CMD 1>,
+                <&macro_tap &rgb_ug RGB_COLOR_HSB(225,100,35)>;
+        };
+
+        rgb_breathe_white: rgb_breathe_white {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings =
+                <&macro_tap &rgb_ug RGB_ON>,
+                <&macro_tap &rgb_ug RGB_EFS_CMD 1>,
+                <&macro_tap &rgb_ug RGB_COLOR_HSB(0,0,35)>;
         };
 
         rgb_spectrum: rgb_spectrum {
@@ -92,16 +246,52 @@
                 <&macro_tap &rgb_ug RGB_EFS_CMD 3>;
         };
 
-        rgb_dim: rgb_dim {
+        rgb_spreadish: rgb_spreadish {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <10>;
             tap-ms = <10>;
             bindings =
                 <&macro_tap &rgb_ug RGB_ON>,
-                <&macro_tap &rgb_ug RGB_EFS_CMD 0>,
-                <&macro_tap &rgb_ug RGB_COLOR_HSB(0,0,15)>;
+                <&macro_tap &rgb_ug RGB_EFS_CMD 3>,
+                <&macro_tap &rgb_ug RGB_COLOR_HSB(190,100,45)>,
+                <&macro_tap &rgb_ug RGB_SPI>,
+                <&macro_tap &rgb_ug RGB_SPI>;
         };
+
+        rgb_party: rgb_party {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings =
+                <&macro_tap &rgb_ug RGB_ON>,
+                <&macro_tap &rgb_ug RGB_EFS_CMD 2>,
+                <&macro_tap &rgb_ug RGB_COLOR_HSB(320,100,45)>;
+        };
+
+        rgb_night: rgb_night {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings =
+                <&macro_tap &rgb_ug RGB_ON>,
+                <&macro_tap &rgb_ug RGB_EFS_CMD 1>,
+                <&macro_tap &rgb_ug RGB_COLOR_HSB(225,100,18)>;
+        };
+
+        rgb_matrix: rgb_matrix {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings =
+                <&macro_tap &rgb_ug RGB_ON>,
+                <&macro_tap &rgb_ug RGB_EFS_CMD 3>,
+                <&macro_tap &rgb_ug RGB_COLOR_HSB(120,100,35)>;
+        };
+
     };
 
     keymap {
@@ -183,10 +373,10 @@
 
             label = "adjust";
             bindings = <
-&bt BT_CLR         &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4                               &kp W  &none  &none  &none  &none  &none
-&ext_power EP_TOG  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_EFF                            &rgb_calm       &rgb_focus      &rgb_alert  &rgb_breathe  &rgb_spectrum  &rgb_swirl
-&none              &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &none            &kp LEFT_ARROW   &kp RIGHT_ARROW                            &rgb_dim        &rgb_ug RGB_TOG &none       &none         &none          &none
-&none              &none            &none            &none            &none            &none            &rgb_ug RGB_TOG    &none           &none           &none       &none         &none          &none
+&rgb_red           &rgb_orange      &rgb_yellow      &rgb_green      &rgb_cyan      &rgb_blue                               &rgb_purple    &rgb_pink       &rgb_white       &rgb_dim       &rgb_spreadish  &rgb_party
+&ext_power EP_TOG  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_EFF                         &rgb_calm      &rgb_focus      &rgb_alert       &rgb_breathe   &rgb_spectrum   &rgb_swirl
+&rgb_ug RGB_OFF    &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &rgb_ug RGB_EFR                         &rgb_night     &rgb_matrix     &rgb_breathe_red &rgb_breathe_green &rgb_breathe_blue &rgb_breathe_white
+&rgb_ug RGB_ON     &rgb_ug RGB_TOG  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &rgb_ug RGB_TOG    &rgb_red       &rgb_green      &rgb_blue      &rgb_white     &rgb_spreadish  &rgb_ug RGB_OFF
                                     &none            &none            &none            &none            &none              &none  &none  &none  &none  &none
             >;
         };
