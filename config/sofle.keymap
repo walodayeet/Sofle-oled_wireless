@@ -17,6 +17,15 @@
 #define ADJUST 3
 
 / {
+    chosen {
+        zmk,underglow = &led_strip;
+    };
+
+    led_map_config: led-map {
+        compatible = "zmk,led-map";
+        led-strip = <&led_strip>;
+    };
+
     // Activate ADJUST layer by pressing raise and lower
 
     conditional_layers {
