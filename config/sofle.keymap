@@ -27,6 +27,83 @@
         };
     };
 
+    macros {
+        rgb_calm: rgb_calm {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings =
+                <&macro_tap &rgb_ug RGB_ON>,
+                <&macro_tap &rgb_ug RGB_EFS_CMD 0>,
+                <&macro_tap &rgb_ug RGB_COLOR_HSB(190,100,35)>;
+        };
+
+        rgb_focus: rgb_focus {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings =
+                <&macro_tap &rgb_ug RGB_ON>,
+                <&macro_tap &rgb_ug RGB_EFS_CMD 0>,
+                <&macro_tap &rgb_ug RGB_COLOR_HSB(35,100,40)>;
+        };
+
+        rgb_alert: rgb_alert {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings =
+                <&macro_tap &rgb_ug RGB_ON>,
+                <&macro_tap &rgb_ug RGB_EFS_CMD 0>,
+                <&macro_tap &rgb_ug RGB_COLOR_HSB(0,100,40)>;
+        };
+
+        rgb_breathe: rgb_breathe {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings =
+                <&macro_tap &rgb_ug RGB_ON>,
+                <&macro_tap &rgb_ug RGB_EFS_CMD 1>,
+                <&macro_tap &rgb_ug RGB_COLOR_HSB(275,100,35)>;
+        };
+
+        rgb_spectrum: rgb_spectrum {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings =
+                <&macro_tap &rgb_ug RGB_ON>,
+                <&macro_tap &rgb_ug RGB_EFS_CMD 2>;
+        };
+
+        rgb_swirl: rgb_swirl {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings =
+                <&macro_tap &rgb_ug RGB_ON>,
+                <&macro_tap &rgb_ug RGB_EFS_CMD 3>;
+        };
+
+        rgb_dim: rgb_dim {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings =
+                <&macro_tap &rgb_ug RGB_ON>,
+                <&macro_tap &rgb_ug RGB_EFS_CMD 0>,
+                <&macro_tap &rgb_ug RGB_COLOR_HSB(0,0,15)>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -107,9 +184,9 @@
             label = "adjust";
             bindings = <
 &bt BT_CLR         &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4                               &kp W  &none  &none  &none  &none  &none
-&ext_power EP_TOG  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_EFF                            &none  &none  &none  &none  &none  &none
-&none              &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &none            &kp LEFT_ARROW   &kp RIGHT_ARROW                            &none  &none  &none  &none  &none  &none
-&none              &none            &none            &none            &none            &none            &rgb_ug RGB_TOG    &none  &none  &none  &none  &none  &none  &none
+&ext_power EP_TOG  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_EFF                            &rgb_calm       &rgb_focus      &rgb_alert  &rgb_breathe  &rgb_spectrum  &rgb_swirl
+&none              &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &none            &kp LEFT_ARROW   &kp RIGHT_ARROW                            &rgb_dim        &rgb_ug RGB_TOG &none       &none         &none          &none
+&none              &none            &none            &none            &none            &none            &rgb_ug RGB_TOG    &none           &none           &none       &none         &none          &none
                                     &none            &none            &none            &none            &none              &none  &none  &none  &none  &none
             >;
         };
