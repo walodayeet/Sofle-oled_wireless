@@ -2,10 +2,12 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: hanks
+      url-base: https://github.com/Hanks-Open-Projects
   projects:
     - name: zmk
-      remote: zmkfirmware
-      revision: v0.3
+      remote: hanks
+      revision: 037d331742277105484513ffff96ebe77abb0132
       import: app/west.yml
   self:
     path: config

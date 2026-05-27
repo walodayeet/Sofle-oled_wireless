@@ -1,0 +1,10 @@
+/* Experimental led_map node for Hanks reactive/per-key RGB fork.
+ * Note: Hanks fork currently uses a hardcoded HNKB40 LED index map,
+ * so Sofle LED positions may be incomplete/wrong until ported.
+ */
+/ {
+    led-map {
+        compatible = "zmk,led-map";
+        led-strip = <&led_strip>;
+    };
+};
